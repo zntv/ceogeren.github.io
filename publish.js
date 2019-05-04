@@ -1,18 +1,18 @@
 var emails = [
-    '3dizhi@gmail.com'
+    'zhainantv@gmail.com'
 ];
 var newestUrls = [
-    'https://july90.xyz',
-    'https://july98.xyz',
-    'https://july37.com',
+    'https://chapipi.ml',
+    'https://chapipi.gq',
+    'https://chapipi.ga',
 ];
 var otherUrls = [
-    'https://3dizhi.github.io/',
-    'https://july50.com',
+    'https://zntv.github.io/',
+    'https://t.me/fabuye',
 ];
 var foreverUrls = [
-    'https://julyporn.com',
-    'https://www.julyporn.com',
+    'https://yeyex.club',
+    'https://tuhao.eu.org',
 ];
 var notices = [
     '* 我们推荐电脑以及Andriod手机用户使用Chrome(谷歌)浏览器浏览本站，iPhone手机我们建议使用手机自带的Safria浏览器访问本站。',
@@ -62,7 +62,7 @@ window.onload = function () {
     var logoElem = document.createElement('div');
     logoElem.setAttribute('class', 'brand');
     logoElem.setAttribute('id', 'logo');
-    logoElem.innerHTML = 'JULY <span>PORN</span><span class="flag">七色</span>'
+    logoElem.innerHTML = '宅男 <span>导航</span><span class="flag">宅男</span>'
     mainElem.appendChild(logoElem);
 
     // newest urls
