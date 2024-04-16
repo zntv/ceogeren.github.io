@@ -1,19 +1,609 @@
+﻿
+<!--
+ * ░░░░░░░░░░░░░░░░░░░░░░░░▄░░
+ * ░░░░░░░░░▐█░░░░░░░░░░░▄▀▒▌░
+ * ░░░░░░░░▐▀▒█░░░░░░░░▄▀▒▒▒▐
+ * ░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐
+ * ░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐
+ * ░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌
+ * ░░▐▒▒▒▄▄▒▒▒▒░░░▒▒▒▒▒▒▒▀▄▒▒
+ * ░░▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐
+ * ░▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄
+ * ░▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒
+ * ▀▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒
+ * 修勾就这样默默地看着你~
+/////////////////////////////////////////////////////////////
+//                                                        //
+//            版权所有:  冷小伤                           //
+//            email: acfunad@gmail.com                  //
+//                                                     //
+////////////////////////////////////////////////////////
+-->
+
+<!--
+	…o888888o.o88888888o.
+…88888888你来了？8888888888o.
+…888::::8888是的，我来了。8888888o.
+…88::::::::88888888888888888888888888o.
+…o8:::::::::888::顶888你本不该来的！88888.
+…8888:8::::::8:::::::::顶88888888888888888888.
+…8888::::8888::::::::::::::::顶88888888888  88
+…8888:::888888888::::::::::::::::顶888888888 8
+…88.88888888888888888:::::::::::::顶88888888888
+…88…8可是我已经来了88:::::::::::顶88888888888888
+…88.888888888888888888888::::::::顶88888888888888888
+…8…8888888888888888888888::::::顶88888888888888888888
+…8888888888888888::88888:::::顶8888888888888888888888
+…88888888888888888::::8888::::8888888888888888 ‘’’‘8888
+…88888888888888888::::8888::::::88888::888888888 888
+…88888888888888888::::888:::::顶::::::888888888 88
+…888888888888888888::::88::::::顶:::::::::::::888888888 88
+.8888888888888888888::::8::::::顶:::::::::::::顶888888888 88
+888…8888888888::88::::8:::::顶:::8oo8::::::88888888888888 8
+88…88888888888:::8:::::::::顶:::::::::::::88888888888888888
+.8…8888888888888:::::::::::顶::“8888888”:::顶88888888888888888
+…8888888888::888::::::::::顶:::::“8a8”::::顶88888888888888888888
+.888888888:::::88:::::::::顶88::::::::::::顶88888888888888888888888
+8888888888:::::8:::::::::顶88888::::::::顶888888888888888888888888888
+888888888:::::8:::::::::顶8888888ooooo顶8888888888888888888888888888888
+888888.顶::::::::::::::顶8888888888::::::顶8888888888888888 ‘’’‘888888888
+8888…顶:::::::::::::::顶88888888888::::::顶8888888888888888 88888888
+.888…顶::::::::::::::顶8888888888888:::::::顶888888888888888 888888
+…888.顶:::::::::::::顶88888888888888888::::::顶8888888888888 88888
+…88.顶:::::::::::::8888:88888888888888888:::::顶顶888888888 8888
+…88.顶:::::::::::8888顶::88888::888888888888:::::顶顶88888 888
+…8…顶::::::::::8888顶:::8888:::::88888888888::::::顶顶88 888
+…8顶:::::::8888顶:::::888:::::::88:::8888888:::::::顶顶 88
+…88顶:::::::8888顶::::::88:::::::::8:::::888888::::::::顶顶 88
+…8888顶:::::888顶:::::::::88::::::::::顶::::8888::::::::::::顶 8
+…88888:顶::::888顶::::::::::8:::::::::::顶::::888::::::::::::::顶
+…88.888:顶:::888:顶::::::::::8::::::::::::顶::888::::::::::::::::顶
+…8.88888顶:::88::顶::::::::::::::::::::::::顶:88::::::::::::::::::顶
+…88888顶:::88::顶:::::::::::::::::::::::::顶88:::::::::::::::::::顶
+…88888顶:::88::顶:::::::::::::::::::::::::顶:8::::::::::::::::::::顶
+…888888顶::::8::顶::::::::::::::8888::::::::顶8::::::::::::8888:::::顶
+…88888…顶:::8::顶顶:::::::::::888888:::::::顶::::::::::::888888::::顶
+…8888…顶顶:::::顶顶::::::::::888888:::::::顶顶::::::::::888888::::顶
+…8888…顶:::::::顶顶::::::::::8888:::::::顶顶顶::::::::::8888::::顶’’’’
+…888…顶顶::::::顶顶顶:::::::::::::::::顶顶::顶::::::::::::::::顶’’’’
+…88…顶::::::::顶顶顶顶:::::::::::顶顶顶:::顶顶:::::::::::::顶’’’’
+…88…顶顶:::::::::顶顶顶顶顶顶顶顶顶顶:::::::顶顶顶顶
+…88…顶顶::::::::::::顶顶顶顶顶顶顶::::::::::::顶顶
+…88…8顶顶::::::::::::::::::::::::::::::::::::::::顶
+…8…88顶顶::::::::::::::::::::::顶:::顶::::::::::顶
+…888顶顶::::::::::::::::::顶顶::::::顶顶::::::顶
+…88888顶顶:::::::::::::::顶顶顶:::::::顶顶:::::顶
+…888888顶顶:::::::::::::顶顶顶:::::::::顶顶:::顶
+…88888888顶顶:::::::::::顶顶顶:::::::::::顶:::顶
+…88.8888888.顶::::::::顶顶顶::::::::::::::顶::顶
+…8…888888…顶::::::顶顶:::::::::::::::::顶::顶
+…888888…顶:::::顶:::::::::::::::::::顶::顶顶
+…888888…顶::::顶::::::::::::::::::::::::顶顶
+…888888…顶::::顶::::::::::::::::::::::::顶:顶
+…88888…顶::::::::::::::8::::::::::::::::顶::顶
+…88888…顶:::::::::::::::88::::::::::::::::顶::顶
+…88888…顶::::::::::::::::8::::::::::::::::::顶::顶
+…88888…顶:::::顶:::::::::::::::::::::顶::::::::顶::顶
+…8888…顶:::::顶:::::::::::::::::::::::顶顶::::::顶::顶
+…8888…顶:::::顶:::::::::::::::::::::::顶顶顶:::::::顶:顶
+…888…顶:::::顶顶::::::::::::::::::::::顶顶顶::::::::顶:顶
+…顶::::::顶顶:::::::::::::::::::::顶顶顶::::::::: 顶:顶
+…顶:::::顶:::::::::::::::::::::::顶顶::::::::::::::顶:顶
+…顶::::::::::::::::::::::::::::::顶::::::::::::::::::顶:顶
+…顶::::::::::::::::::::::::::::::::::::::::::::::::::顶:顶
+…顶::::::::顶:::::::::::::::::::::::::::::::::::::::::顶:顶
+…顶::::::::顶:::::::::::::::::顶::::::::::::::::::::::顶:顶
+…顶::::::::::顶::::::::::::::顶::::::::::::::::::::::::顶:顶顶
+…顶:::::::::::顶8::::::::8:顶:::::::::::::::::::::::::顶:顶顶p
+…顶::::::::::::888hole888顶:::::::::::::::::::::::::::顶:顶o
+…顶:::::::::::::88888888顶:::::::::::::::::::::::::::顶:顶p
+…顶::::::::::::::888888顶::::::::::::::::::::::::::::顶:顶
+…顶:::::::::::::::88888顶:::::::::::::::::::::::::::顶:顶
+…顶:::::::::::::::::88顶::::::::::::::::::::::::::::顶顶
+…顶:::::::::::::::::::顶:::::::::::::::::::::::::::顶顶
+…顶:::::::::::::::::::顶::::::::::::::::::::::::::顶顶
+…顶:::::::::::::::::顶::::::::::::::::::::::::::顶顶
+…顶:::::::::::::::::顶::::::::::::::::::::::::::顶
+…顶:::::::::::::::顶::::::::::::::::::::::::::顶
+…顶:::::::::::::::顶:::::::::::::::::::::::::顶
+…顶:::::::::::::顶:::::::::::::::::::::::::顶
+…顶:::::::::::::顶:::::::::::::::::::::::顶
+…顶:::::::::::顶:::::::::::::::::::::::顶
+…顶:::::::::::顶::::::::::::::::::::::顶
+…顶:::::::::顶::::::::::::::::::::::顶
+…顶:::::::::顶:::::::::::::::::::::顶
+…顶:::::::顶:::::::::::::::::::::顶
+…顶::::::顶::::::::::::::::::::顶
+…顶:::::顶::::::::::::::::::::顶
+…顶:::顶::::::::::::::::::::顶
+…顶::顶::::::::::::::::::::顶
+…顶:顶:::::::::::::::::::顶
+…顶顶:::::::::::::::::::顶
+…顶顶::::::::::::::::::顶
+…顶顶:::::::::::::::::顶
+…顶顶:::::顶::::::::顶顶
+…顶顶::::顶顶:::::::顶顶
+…顶顶::::::顶顶:::::顶顶
+…顶顶::::::::::::::顶顶
+…顶顶::::顶:::::::::顶顶
+…顶顶::顶顶顶:::::::顶顶
+…顶顶::顶顶顶:::::::顶顶
+…顶顶:::顶顶::::::::::顶
+…顶顶::顶顶::::::::::顶
+…顶顶::顶顶:::::::::::顶
+…顶顶:::顶::::::::::::顶
+…顶顶:::::::::::::::::顶
+…顶顶:::::::::::::::::顶
+…顶顶::::::::::::::::::顶
+…顶顶::::::::::::::::::顶
+…顶顶::::::::::::::::::顶
+…顶顶:::::::::::::::::顶
+…顶顶:::::::::::::::::顶
+…顶顶:::::::::::::::::顶
+…顶顶:::::::::::::::::顶
+…顶顶:::::::::::::::::顶
+…顶顶:::::::::::::::顶
+…顶顶:::::::::::::::顶
+…顶顶:::::::::::::::顶
+…顶顶::::::::::::::顶
+…顶顶:::::::::::::顶
+…顶顶:::::::::::::顶
+…顶顶:::::::::::::顶
+…顶顶::::::::::::顶
+…顶顶::::::::::::顶
+…顶顶:::::::::::顶
+…顶顶::::::::::顶
+…顶顶::::::::::顶
+…顶顶::::::::顶
+…顶顶::::::::顶
+…顶顶::::::::顶
+…顶顶:::::::顶
+…顶顶:::::::顶
+…顶顶::::::顶
+…顶顶::::::顶
+…顶顶::::::顶
+…顶顶::::::顶
+…顶顶::::::顶
+…顶顶::::::顶
+…顶顶:::::::顶
+…顶:顶::::::::顶
+…顶:顶:::::::::顶
+…顶:顶::::::::::顶
+…顶:顶:::::::::::顶
+…顶:顶::::::::::::顶
+…顶:顶:::::::::::::顶
+…顶:顶::::::::::::::顶
+…顶顶:::::::::::::::::顶
+…顶顶::::::::::::::::顶
+…顶顶顶:::::::::顶顶
+…顶顶::顶::::顶顶
+…顶顶顶顶顶顶顶
+…顶顶顶顶顶
+-->
+
+
 
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="publish.css?20190328" />
-    <title>宅男导航|福利导航|成人视频|色情網站|最新地址</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta content='width=device-width, initial-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="keywords" content="宅男导航,福利导航,免费成人电影,免费成人影片,免費成人視頻,免費成人貼圖,免費成人自拍,免費成人小說,最新地址" />
-    <meta name="description" content="歡迎訪問宅男导航|最新地址|成人视频|色情網站，為您提供宅男导航最新地址。" />
-</head>
 
-<body>
-    <div id="main"></div>
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>星期八演示站点</title>
+
+  <!-- HTML -->
+
+  <!-- Custom Styles -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="bc.css">
+
+
+
+<body style="max-width: 768px; margin: auto;">
+
+  <div class="bc_content">
+
+    <div class="bc-fluid">
+
+      <div class="bc-row bc-space10">
+
+        <div class="bc-xs12">
+
+          <div class="bc_mbl bc_box" id="bc_mobile_head">
+
+            <div class="bc-row">
+
+              <div class="bc-xs3">
+
+                <img class="bc_mbl bc_box img-avatar " style="border-radius: 50%;" src="logo.gif">
+
+              </div>
+
+              <div class="bc-xs9">
+
+                <div class="bc-xs12">
+
+                  <div id="bc_name">冷小伤</div>
+
+                  <div id="bc_tip">冷销魂，酒醉人，拿下小伤你是神</div>
+
+                </div>
+
+                <div class="bc-xs12">
+
+                  <a class="btn">标签：</a>
+
+                  <a class="btn btn-orange">大叔</a>
+
+                  <a class="btn btn-purple">80后</a>
+
+                  <a class="btn btn-green">孤僻</a>
+
+                  <a class="btn btn-blue">潜水</a>
+
+                </div>
+
+                <div class="bc-xs12">
+
+                  <a class="btn">擅长：</a>
+
+                  <a class="btn btn-green">DUCHU</a>
+
+                  <a class="btn btn-yellow">YIGERENDAIZHE</a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bc-row bc-space10">
+
+        <div class="bc-xs4">
+
+          <div class="bc_box bc_mbl bc_center">
+
+            <svg class="icon" aria-hidden="true">
+
+              <use xlink:href="#icon-weixin"></use>
+
+            </svg>
+
+            QQ:77777
+
+          </div>
+
+        </div>
+
+        <div class="bc-xs4">
+
+          <div class="bc_box bc_mbl bc_center">
+
+            <svg class="icon" aria-hidden="true">
+
+              <use xlink:href="#icon-QQ"></use>
+
+            </svg>
+
+            QQ:88888
+
+          </div>
+
+        </div>
+
+        <div class="bc-xs4">
+
+          <div class="bc_box bc_mbl bc_center">
+
+            <svg class="icon" aria-hidden="true">
+
+              <use xlink:href="#icon-gitee"></use>
+
+            </svg>
+
+            TEL:99999
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bc-row bc-space10">
+
+        <div class="bc-sm12">
+
+          <div class="bc_box bc_mbl">
+
+            <div class="bc_box bc_mbl">
+
+              <p>如果您喜欢我们的网站，请将本站添加到收藏夹（快捷键<code>Ctrl+D</code>），并<a class="btn btn-green" href="#"
+
+                  target="_blank">设为浏览器主页</a>，方便您的下次访问，感谢支持。
+
+              <p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bc-row bc-space10">
+
+        <div class="bc-xs12">
+
+          <div class="bc_box bc_mbl">
+
+            <div class="bc-row">
+
+              <h3 class="bc-xs12 bc_box"><svg class="icon" aria-hidden="true">
+
+                  <use xlink:href="#icon-zhandian"></use>
+
+                </svg>旗下站点</h3>
+
+              <hr>
+
+            </div>
+
+            <div class="bc-row bc-space10" style="word-wrap:break-word;">
+
+              <a href="https://xqba.top" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>星期八分享</div>
+
+              </a>
+
+              <a href="https://wx.id.lv" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>星期八导航</div>
+
+              </a>
+
+              <a href="https://mengxiang9521.top" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>梦想博客</div>
+
+              </a>
+
+              <a href="https://github.com/peiwochat" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>GitHub</div>
+
+              </a>
+              <a href="https://click.meituan.com/t?t=1&c=2&p=InZMOb5ziXxY" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>美团外卖券</div>
+
+              </a>
+
+<a href="https://www.ctfile.com/p/giftcard?uid=50503291&type=1&key=e3ad5f" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>城通网盘红包</div>
+
+              </a>
+              <a href="https://s.52tt.com/b/5Fcm1" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>王者赏金赛</div>
+
+              </a>
+              <a href="https://tiger-sms.com/?ref=161848" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>老虎接码</div>
+
+              </a>
+              <a href="https://www.namesilo.com/domain/search-domains?rid=0dbe392wd" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>便宜域名</div>
+
+              </a>
+               <a href="https://my.hostus.us/aff.php?aff=1824" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>便宜VPS</div>
+
+              </a>
+               <a href="https://xuxubaobao.ug.ele.me/wow/alsc/mod/71f70bf57776ddbda7c94848?bc_fl_src=undefined&inviterId=1808586&actId=1&FastMode=1&_ltracker_f=hjb_app_xbb&chInfo=ch_app_chsub_Photo&_ltracker_share_schema=app_outside_poster&targetUrl=https%3A%2F%2Ftb.ele.me%2Fwow%2Falsc%2Fmod%2Fd5275789de46503ba0908a9d%3Ffrom%3Dzxj_wx_scan%26scene%3Dafb58b426d8c4ccaab1406f26ff8620f%26inviterId%3D1808586%26actId%3D1%26FastMode%3D1%26_ltracker_f%3Dhjb_app_xbb%26chInfo%3Dch_app_chsub_Photo%26_ltracker_share_schema%3Dapp_outside_poster" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>饿了么外卖券</div>
+
+              </a>
+               <a href="https://t.me/sjzxbb" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>联系我</div>
+
+              </a>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bc-row bc-space10">
+
+        <div class="bc-xs12">
+
+          <div class="bc_box bc_mbl">
+
+            <div class="bc-row">
+
+              <h3 class="bc-xs12 bc_box"><svg class="icon" aria-hidden="true">
+
+                  <use xlink:href="#icon-zhandian"></use>
+
+                </svg>友情链接</h3>
+
+              <hr>              
+
+            </div>
+
+            <div class="bc-row bc-space10" style="word-wrap:break-word;">
+
+              <a href="https://mengxiang9521.top/sort/mfkj" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>免费空间</div>
+
+              </a>
+
+              <a href="https://mengxiang9521.top/sort/mfym" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>免费域名</div>
+
+              </a>
+
+              <a href="https://blog.mengxiang9521.top/" class="bc-xs6 bc-sm4 bc-md4 bc-lg4" target="_blank">
+
+                <div class="bc_a btn-orange bc_center"> <svg class="icon" aria-hidden="true">
+
+                    <use xlink:href="#icon-lianjie"></use>
+
+                  </svg>点滴记忆</div>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bc-row bc-space10">
+
+        <div class="bc-xs12">
+
+          <div class="bc_mbl bc_box" id="bc_foot">
+
+            Copyright © since 1996 冷小伤
+<br>
+        <span id="momk"></span><span id="momk" style="color: #ff0000;"></span>
+<script type="text/javascript">
+function NewDate(str) {
+str = str.split('-');
+var date = new Date();
+date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+date.setUTCHours(0, 0, 0, 0);
+return date;
+}
+function momxc() {
+var birthDay =NewDate("2023-12-22");
+var today=new Date();
+var timeold=today.getTime()-birthDay.getTime();
+var sectimeold=timeold/1000
+var secondsold=Math.floor(sectimeold);
+var msPerDay=24*60*60*1000; var e_daysold=timeold/msPerDay;
+var daysold=Math.floor(e_daysold);
+var e_hrsold=(daysold-e_daysold)*-24;
+var hrsold=Math.floor(e_hrsold);
+var e_minsold=(hrsold-e_hrsold)*-60;
+var minsold=Math.floor((hrsold-e_hrsold)*-60); var seconds=Math.floor((minsold-e_minsold)*-60).toString();
+document.getElementById("momk").innerHTML = "本站已安全运行："+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+setTimeout(momxc, 1000);
+}momxc();
+</script>  <style>
+#momk{animation:change 10s infinite;font-weight:800; }
+@keyframes change{0%{color:#5cb85c;}25%{color:#556bd8;}50%{color:#e40707;}75%{color:#66e616;}100% {color:#67bd31;}}
+</style>
+<br/>
+            <span class="btn bc-hide-xs">收藏本站（快捷键<code>Ctrl+D</code>）</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <audio autoplay="autoplay" loop=""><source src="http://music.163.com/song/media/outer/url?id=1947485303.mp3"></audio>
+
+    </div>
+
+  </div>
+
+  <!-- Project -->
+
+  
+
 </body>
-<script type="text/javascript" src="publish.js?20190402"></script>
+
+
 
 </html>

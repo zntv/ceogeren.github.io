@@ -1,0 +1,138 @@
+body {
+   background: url("1.jpg");
+   background-size: cover;
+   height: 100vh;
+}
+
+.bc_right {
+   text-align: right;
+}
+
+.bc_content {
+   margin-top: 30px;
+}
+
+#bc_mobile_head {
+   margin-top: 0px;
+}
+
+.icon {
+   width: 1em;
+   height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+   padding-right: 2px;
+}
+
+.img-avatar {
+   display: inline-block !important;
+   width: 64px;
+   height: 64px;
+}
+
+.img-avatar-thumb {
+   margin: 5px;
+   -webkit-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.4);
+   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+.bc_a {
+   width: auto;
+   word-wrap: break-word;
+   font-size: 12pt;
+   padding: 5px 15px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   box-shadow: 0 0 2px #eee;
+   border-radius: 25px;
+}
+
+.bc_center {
+   text-align: center;
+}
+
+.bc_box {
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.bc_mbl {
+   backdrop-filter: blur(20px);
+   box-shadow: 0 1px 30px 1px rgba(0, 0, 0, .3);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+   border-left: 1px solid rgba(255, 255, 255, 0.4);
+   color: #FFFFFF;
+}
+
+#bc_name {
+   font-size: 18pt;
+   margin: 5px 5px 0 0;
+}
+
+#bc_tip {
+   padding: 5px 0;
+}
+
+.btn {
+   width: auto;
+   word-wrap: break-word;
+   margin: 2px;
+   padding: 0px 5px;
+   font-size: 8pt;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   box-shadow: 0 0 2px #eee;
+   border-radius: 25px;
+}
+
+.btn:hover {
+   background-position: right center;
+   color: #FFFFFF;
+}
+
+.btn-orange {
+   background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+
+.btn-purple {
+   background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+.btn-green {
+   background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+}
+
+.btn-blue {
+   background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+.btn-yellow {
+   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+}
+
+#bc_foot {
+   text-align: center;
+}
+
+@media screen and (min-width:768px) {
+   body {
+      background: url("2.jpg");
+      background-size: cover;
+      height: 100vh;
+   }
+
+   .bc_content {
+      margin-top: 15px;
+   }
+
+   #bc_foot {
+      padding: 5px;
+   }
+}
